@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-md-6 m-auto">
+        <div class="container mt-5 pl-5">
+            <h2 class="text-center">Login </h2>
+            <form action="/login" method="post">
+                {{#if loginErr}}
+                <p class="error">{{loginErr}} </p>
+                {{/if}}
+                <div class="col-md-12 form-group p_star">
+                    <label for="">Email</label>
+                    <input required="required" type="email" class="form-control" id="password" name="Email" value=""
+                        placeholder="Enter email address">
+
+                </div>
+
+
+                <div class="col-md-12 form-group p-star">
+                    <label for="">Password</label>
+                    <input required='required' type="password" class="form-control" id="password" name="Password"
+                        value="" placeholder="Password">
+
+                </div>
+                <a href="/signup">Create new account?</a>
+                <button type="submit" class="btn btn-success float-right">login</button>
+
+            </form>
+        </div>
+
+    </div>
+
+</div>
